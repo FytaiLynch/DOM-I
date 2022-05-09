@@ -40,3 +40,67 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const header = document.querySelector("h1");
+header.textContent = siteContent["cta"]["h1"];
+
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+const logoImg = document.querySelector("#logo-img");
+logoImg.src = siteContent["images"]["logo-img"];
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent["images"]["cta-img"];
+
+const middleImg = document.querySelector("#middle-img");
+middleImg.src = siteContent["images"]["accent-img"]
+
+const featuresHeading = document.querySelector(".text-content:nth-of-type(1) h4");
+featuresHeading.textContent = siteContent["main-content"]["features-h4"];
+const featuresText = document.querySelector(".text-content:nth-of-type(1) p");
+featuresText.textContent = siteContent["main-content"]["features-content"]
+
+const aboutHeading = document.querySelector(".text-content:nth-of-type(2) h4");
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
+const aboutText = document.querySelector(".text-content:nth-of-type(2) p");
+aboutText.textContent = siteContent["main-content"]["about-content"];
+
+const servicesHeading = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4");
+servicesHeading.textContent = siteContent["main-content"]["services-h4"];
+const servicesText = document.querySelector(".bottom-content .text-content:nth-of-type(1) p");
+servicesText.textContent = siteContent["main-content"]["services-content"];
+
+const productHeading = document.querySelector(".bottom-content .text-content:nth-of-type(2) h4");
+productHeading.textContent = siteContent["main-content"]["product-h4"];
+const productText = document.querySelector(".bottom-content .text-content:nth-of-type(2) p");
+productText.textContent = siteContent["main-content"]["product-content"];
+
+const visionHeading = document.querySelector(".bottom-content .text-content:nth-of-type(3) h4");
+visionHeading.textContent = siteContent["main-content"]["vision-h4"];
+const visionText = document.querySelector(".bottom-content .text-content:nth-of-type(3) p");
+visionText.textContent = siteContent["main-content"]["vision-content"];
+
+const contact = document.querySelector(".contact h4");
+contact.textContent = siteContent["contact"]["contact-h4"];
+const address = document.querySelector(".contact p:nth-of-type(1)");
+address.textContent = siteContent["contact"]["address"];
+const phone = document.querySelector(".contact p:nth-of-type(2)");
+phone.textContent = siteContent["contact"]["phone"];
+const email = document.querySelector(".contact p:nth-of-type(3)");
+email.textContent = siteContent["contact"]["email"];
+
+const footer = document.querySelector("footer")
+footer.textContent = siteContent["footer"]["copyright"]
+
+const navBar = document.querySelectorAll("nav a");
+for (let i = 0; i < navBar.length; i++) {
+  console.log(navBar[i].textContent);
+}
+navBar[0].textContent = siteContent["nav"]["nav-item-1"]
+navBar[1].textContent = siteContent["nav"]["nav-item-2"]
+navBar[2].textContent = siteContent["nav"]["nav-item-3"]
+navBar[3].textContent = siteContent["nav"]["nav-item-4"]
+navBar[4].textContent = siteContent["nav"]["nav-item-5"]
+navBar[5].textContent = siteContent["nav"]["nav-item-6"]
